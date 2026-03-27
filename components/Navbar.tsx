@@ -33,7 +33,7 @@ export default function Navbar() {
               <button
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
-                className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1"
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1 cursor-pointer"
               >
                 Œuvres
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
