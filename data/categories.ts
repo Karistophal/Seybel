@@ -10,7 +10,7 @@ export const categories: Category[] = [
     slug: 'paris',
     name: 'Paris',
     description: 'Les rues, les monuments et l\'âme de la Ville Lumière capturés à travers un regard sensible et poétique.',
-    coverImage: '/paris/vieux-montmartre.jpg',
+    coverImage: '/paris/4832 Montmartre Cabaret le Carillon 1 SS Huile 10F 72DPI.jpg',
   },
   {
     slug: 'paysages',
@@ -28,7 +28,7 @@ export const categories: Category[] = [
     slug: 'venise',
     name: 'Venise',
     description: 'La Sérénissime vue par les yeux d\'une artiste éprise de lumière et de reflets sur l\'eau.',
-    coverImage: '/venise/soir-a-venise.jpg',
+    coverImage: '/venise/3966 Soir de Venise Huile 40P 72DPI.jpg',
   },
   {
     slug: 'scenes-de-genres',

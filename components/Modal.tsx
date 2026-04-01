@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Painting } from '@/data/paintings';
 import { getPaintingAlt } from '@/lib/artwork';
+import Image from 'next/image';
 
 interface ModalProps {
   painting: Painting | null;
@@ -32,32 +32,29 @@ export default function Modal({ painting, onClose }: ModalProps) {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
           onClick={onClose}
         >
-          <div className="flex min-h-full items-center justify-center">
+          <div className="flex min-h-full w-full items-center justify-center">
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: 'spring', damping: 25 }}
-              className="my-4 flex w-full max-w-2xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-gray-900 md:max-h-[90vh] md:flex-row"
+              className="my-4 flex max-h-[calc(100vh-2rem)] w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-gray-900 md:h-[80vh] md:max-h-[80vh] md:flex-row"
               onClick={(e) => e.stopPropagation()}
               role="dialog"
               aria-modal="true"
               aria-labelledby="painting-title"
             >
-              <div className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 md:flex-1 md:p-6">
-                <div className="relative h-[70vh] w-full max-w-full md:h-[calc(90vh-3rem)]">
-                  <Image
-                    src={painting.image}
-                    alt={getPaintingAlt(painting)}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 60vw"
-                    priority
-                  />
-                </div>
+              <div className="relative min-h-[260px] min-w-0 flex-1 bg-gray-50 dark:bg-gray-950 md:min-h-0">
+                <Image
+                  src={painting.image}
+                  alt={getPaintingAlt(painting)}
+                  fill
+                  className="object-contain md:p-6"
+                  sizes="(max-width: 768px) 100vw, 60vw"
+                  priority
+                />
               </div>
-
-              <div className="flex flex-col justify-between p-6 md:w-[22rem] md:max-h-[90vh] md:overflow-y-auto">
+              <div className="flex min-h-0 flex-col justify-between overflow-y-auto p-6 md:w-[15rem] md:flex-none lg:w-[17rem]">
                 <div>
                   <button
                     onClick={onClose}
@@ -68,7 +65,7 @@ export default function Modal({ painting, onClose }: ModalProps) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
-                  <h2 id="painting-title" className="mb-3 font-playfair text-2xl font-bold text-gray-900 dark:text-white">{painting.title}</h2>
+                  <h2 id="painting-title" className="mb-3 font-playfair text-2xl font-bold text-gray-900 dark:text-white max-w-[15rem]">{painting.title}</h2>
                   <p className="mb-6 text-sm leading-relaxed text-gray-500 dark:text-gray-400">{painting.description}</p>
                   <dl className="space-y-2 text-sm">
                     <div className="flex justify-between gap-4">
