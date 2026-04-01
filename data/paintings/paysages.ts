@@ -106,6 +106,7 @@ export const paysagesPaintings = [
     description: "Pastel 24x42cm",
     dimensions: "24x42 cm",
     technique: "Pastel",
+    featured: true,
   },
   {
     id: "crepuscule",

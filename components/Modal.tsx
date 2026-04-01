@@ -22,6 +22,7 @@ export default function Modal({ painting, onClose }: ModalProps) {
     };
   }, [painting, onClose]);
 
+
   return (
     <AnimatePresence>
       {painting && (
@@ -44,12 +45,12 @@ export default function Modal({ painting, onClose }: ModalProps) {
               aria-modal="true"
               aria-labelledby="painting-title"
             >
-              <div className="relative min-h-[260px] min-w-0 flex-1 bg-gray-50 dark:bg-gray-950 md:min-h-0">
+              <div className="relative w-full flex-1 min-h-[260px] bg-gray-50 dark:bg-gray-950">
                 <Image
                   src={painting.image}
                   alt={getPaintingAlt(painting)}
                   fill
-                  className="object-contain md:p-6"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 60vw"
                   priority
                 />
@@ -65,7 +66,7 @@ export default function Modal({ painting, onClose }: ModalProps) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
-                  <h2 id="painting-title" className="mb-3 font-playfair text-2xl font-bold text-gray-900 dark:text-white max-w-[15rem]">{painting.title}</h2>
+                  <h2 id="painting-title" className="mb-3 font-playfair text-2xl font-bold text-gray-900 dark:text-white max-w-[200px]">{painting.title}</h2>
                   <p className="mb-6 text-sm leading-relaxed text-gray-500 dark:text-gray-400">{painting.description}</p>
                   <dl className="space-y-2 text-sm">
                     <div className="flex justify-between gap-4">

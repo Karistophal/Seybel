@@ -167,7 +167,7 @@ export const parisPaintings = [
     description: "Huile 10P 38x55cm",
     dimensions: "38x55 cm",
     technique: "Huile",
-    featured: false,
+    featured: true,
   },
   {
     id: "3925",

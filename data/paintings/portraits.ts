@@ -7,7 +7,6 @@ export const portraitsPaintings = [
     description: "",
     dimensions: "73x100x4 cm",
     technique: "Huile",
-    featured: true,
   },
   {
     id: "elise-et-le-printemps",
@@ -17,6 +16,5 @@ export const portraitsPaintings = [
     description: "",
     dimensions: "46x65 cm",
     technique: "Huile sur toile",
-    featured: true,
   },
 ];

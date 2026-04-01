@@ -25,7 +25,7 @@ export default function Carousel({ paintings }: CarouselProps) {
   }, [paintings.length]);
 
   useEffect(() => {
-    const timer = setInterval(next, 5000);
+    const timer = setInterval(next, 500000);
     return () => clearInterval(timer);
   }, [next]);
 
@@ -56,7 +56,7 @@ export default function Carousel({ paintings }: CarouselProps) {
               alt={getPaintingAlt(painting)}
               width={1600}
               height={1200}
-              className="h-auto max-h-full w-auto max-w-full object-contain"
+              className="h-full max-h-full w-auto max-w-full object-contain"
               priority
               sizes="100vw"
             />

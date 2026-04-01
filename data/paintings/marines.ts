@@ -7,7 +7,7 @@ export const marinesPaintings = [
     description: "Huile 23x46cm",
     dimensions: "23x46 cm",
     technique: "Huile",
-    featured: false,
+    featured: true,
   },
   {
     id: "4814",
@@ -117,7 +117,7 @@ export const marinesPaintings = [
     description: "Huile 30P 65x92cm",
     dimensions: "65x92 cm",
     technique: "Huile",
-    featured: true,
+    featured: false,
   },
   {
     id: "4566",

@@ -17,7 +17,7 @@ export const venisePaintings = [
     description: "Huile 6P 27x41cm",
     dimensions: "27x41 cm",
     technique: "Huile",
-    featured: false,
+    featured: true,
   },
   {
     id: "4675",
