@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Painting } from '@/data/paintings';
+import { getPaintingAlt } from '@/lib/artwork';
 
 interface CarouselProps {
   paintings: Painting[];
@@ -49,10 +50,10 @@ export default function Carousel({ paintings }: CarouselProps) {
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 flex items-center justify-center bg-black">
+          <div className="absolute inset-0 flex h-full items-center justify-center bg-gray-100 dark:bg-gray-800">
             <Image
               src={painting.image}
-              alt={painting.title}
+              alt={getPaintingAlt(painting)}
               width={1600}
               height={1200}
               className="h-auto max-h-full w-auto max-w-full object-contain"

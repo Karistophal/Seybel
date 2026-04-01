@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Painting } from '@/data/paintings';
+import { getPaintingAlt } from '@/lib/artwork';
 
 interface ModalProps {
   painting: Painting | null;
@@ -43,13 +45,16 @@ export default function Modal({ painting, onClose }: ModalProps) {
               aria-labelledby="painting-title"
             >
               <div className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 md:flex-1 md:p-6">
-                <img
-                  src={painting.image}
-                  alt={painting.title}
-                  className="block h-auto max-h-[70vh] w-auto max-w-full object-contain md:max-h-[calc(90vh-3rem)]"
-                  decoding="async"
-                  loading="eager"
-                />
+                <div className="relative h-[70vh] w-full max-w-full md:h-[calc(90vh-3rem)]">
+                  <Image
+                    src={painting.image}
+                    alt={getPaintingAlt(painting)}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                    priority
+                  />
+                </div>
               </div>
 
               <div className="flex flex-col justify-between p-6 md:w-[22rem] md:max-h-[90vh] md:overflow-y-auto">

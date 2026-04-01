@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { categories } from '@/data/categories';
@@ -8,10 +8,12 @@ import { categories } from '@/data/categories';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   return (
     <nav className="sticky top-0 z-50 bg-white/90 dark:bg-black/90 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
@@ -114,7 +116,6 @@ export default function Navbar() {
                 </div>
               </div>
               <Link href="/about" className="text-sm text-gray-600 dark:text-gray-300" onClick={() => setMenuOpen(false)}>À propos</Link>
-              <Link href="/contact" className="text-sm text-gray-600 dark:text-gray-300" onClick={() => setMenuOpen(false)}>Contact</Link>
               {mounted && (
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
