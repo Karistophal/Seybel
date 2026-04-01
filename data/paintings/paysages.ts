@@ -57,7 +57,7 @@ export const paysagesPaintings = [
     id: "4683-menton",
     title: "Menton",
     category: "paysages",
-    image: "/paysages/4683 Menton Huile 6P 72DPI.jpg",
+    image: "/paysages/4683 Menton Huile 6P 72DPI.JPG",
     description: "Huile sur toile 6P 41x27cm",
     dimensions: "41x27 cm",
     technique: "Huile sur toile",
