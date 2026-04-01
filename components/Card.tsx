@@ -29,7 +29,7 @@ export default function Card({ painting, onClick }: CardProps) {
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
           <div className="p-4 text-white translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
             <p className="font-playfair text-lg font-semibold leading-tight">{painting.title}</p>
-            <p className="text-sm text-white/80">{painting.technique} · {painting.year}</p>
+            <p className="text-sm text-white/80">{painting.technique}</p>
           </div>
         </div>
       </div>

@@ -16,13 +16,13 @@ export const categories: Category[] = [
     slug: 'paysages',
     name: 'Paysages',
     description: 'Des campagnes françaises aux horizons lointains, une invitation au voyage et à la contemplation.',
-    coverImage: '/paysages/les-monts.jpg',
+    coverImage: '/paysages/4553 Au-delà de St Urcize Huile 6F 72DPI.jpg',
   },
   {
     slug: 'marines',
     name: 'Marines',
     description: 'La mer dans tous ses états : calme, tempétueuse, au lever du soleil ou sous les étoiles.',
-    coverImage: '/marines/cassis.jpg',
+    coverImage: '/marines/4570 Honfleur La voile rouge Huile 6F 72DPI.jpg',
   },
   {
     slug: 'venise',

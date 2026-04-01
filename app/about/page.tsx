@@ -91,14 +91,14 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <div className="text-center">
+      {/* <div className="text-center">
         <Link
           href="/contact"
           className="inline-block px-10 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-full hover:bg-gray-700 dark:hover:bg-gray-100 transition-colors"
         >
           Me contacter
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

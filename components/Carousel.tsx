@@ -49,14 +49,17 @@ export default function Carousel({ paintings }: CarouselProps) {
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           className="absolute inset-0"
         >
-          <Image
-            src={painting.image}
-            alt={painting.title}
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black">
+            <Image
+              src={painting.image}
+              alt={painting.title}
+              width={1600}
+              height={1200}
+              className="h-auto max-h-full w-auto max-w-full object-contain"
+              priority
+              sizes="100vw"
+            />
+          </div>
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute bottom-12 left-0 right-0 text-center text-white px-4">
@@ -74,7 +77,7 @@ export default function Carousel({ paintings }: CarouselProps) {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-lg text-white/80"
             >
-              {painting.technique} · {painting.year}
+              {painting.technique}
             </motion.p>
           </div>
         </motion.div>
