@@ -3,7 +3,7 @@ export interface Painting {
   title: string;
   category: string;
   image: string;
-  description: string;
+  description?: string;
   dimensions: string;
   technique: string;
   featured?: boolean;
