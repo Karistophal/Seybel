@@ -36,8 +36,10 @@ export default function Card({ painting, onClick }: CardProps) {
       </div>
       <div className="mt-3">
         <h3 className="font-playfair font-medium text-gray-900 dark:text-white leading-snug">{painting.title}</h3>
-        <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{painting.technique} · {painting.dimensions}</p>
-      </div>
+        <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
+          {painting.technique}
+          {painting.dimensions && ` · ${painting.dimensions}`}
+        </p>      </div>
     </motion.div>
   );
 }

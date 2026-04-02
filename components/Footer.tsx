@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Lyne Seybel</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-              Peintre française contemporaine. Œuvres à l&apos;huile, à l&apos;acrylique et au pastel.
+              Peintre française moderne. Œuvres à l'huile, gouache, aquarelle, pastel, fusain, pierre noire et gravure.
             </p>
           </div>
 

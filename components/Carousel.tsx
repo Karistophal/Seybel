@@ -25,7 +25,7 @@ export default function Carousel({ paintings }: CarouselProps) {
   }, [paintings.length]);
 
   useEffect(() => {
-    const timer = setInterval(next, 500000);
+    const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
   }, [next]);
 

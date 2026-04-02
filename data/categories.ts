@@ -46,12 +46,12 @@ export const categories: Category[] = [
     slug: 'nus',
     name: 'Nus',
     description: 'Le corps humain célébré dans sa beauté naturelle, avec grâce et délicatesse.',
-    coverImage: '/nus/la-farandole.jpg',
+    coverImage: '/nus/DSC_8309 Nu aux fleurs.jpg',
   },
   {
     slug: 'fleurs-bouquets',
     name: 'Fleurs & Bouquets',
     description: 'La nature dans sa plus grande splendeur : fleurs épanouies, bouquets généreux, couleurs vibrantes.',
-    coverImage: '/fleurs-bouquets/bouquet-au-vase-bleu.jpg',
+    coverImage: '/fleurs-bouquets/5333 Giroflées Huile toile 8F Chou 72DPI.jpg',
   },
 ];
