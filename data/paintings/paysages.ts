@@ -116,7 +116,7 @@ export const paysagesPaintings = [
     id: "5138-villecroze-en-provence",
     title: "Villecroze en Provence",
     category: "paysages",
-    image: "/paysages/5138 Villecroze en Provence Pastel.jpg",
+    image: "/paysages/5138 Villecroze Pastel 28x19.jpg",
     dimensions: "19x28 cm",
     technique: "Pastel",
   },
