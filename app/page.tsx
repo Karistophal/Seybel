@@ -9,10 +9,10 @@ import { getArtistPortraitAlt, getCategoryImageAlt } from '@/lib/artwork';
 import { absoluteUrl, buildPageMetadata, siteConfig } from '@/lib/seo';
 
 const homeDescription =
-  'Galerie de peinture en ligne dediee aux oeuvres de Lyne Seybel, artiste peintre francaise contemporaine inspiree par Paris, Venise, la mer, les paysages et les bouquets.';
+  'Galerie de peinture en ligne dediee aux oeuvres de Lyne Seybel, artiste peintre francaise moderne inspiree par Paris, Venise, la mer, les paysages et les bouquets.';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'Galerie de peintures contemporaines',
+  title: 'Galerie de peintures modernes',
   description: homeDescription,
   path: '/',
   image: '/lyne-seybel.jpg',
@@ -20,7 +20,7 @@ export const metadata: Metadata = buildPageMetadata({
   keywords: [
     ...siteConfig.keywords,
     'galerie d art en ligne',
-    'tableaux contemporains',
+    'tableaux modernes',
     'oeuvres originales',
   ],
 });

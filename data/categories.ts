@@ -34,13 +34,13 @@ export const categories: Category[] = [
     slug: 'scenes-de-genres',
     name: 'Scènes de genres',
     description: 'Instantanés de vie, moments fugaces saisis avec tendresse et humanité.',
-    coverImage: '/scenes-de-genres/la-chorale.jpg',
+    coverImage: '/scenes-de-genres/4597 Plaisir du jeu Huile 60M 72DPI.jpg',
   },
   {
     slug: 'portraits',
     name: 'Portraits',
     description: 'Des visages qui racontent des histoires, des regards qui traversent le temps.',
-    coverImage: '/portraits/le-gondolier-mauve.jpg',
+    coverImage: '/portraits/4874 Auto portrait Huile 38x46 72DPI.jpg',
   },
   {
     slug: 'nus',

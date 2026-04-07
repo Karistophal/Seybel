@@ -5,7 +5,7 @@ import { getArtistPortraitAlt } from '@/lib/artwork';
 import { absoluteUrl, buildPageMetadata, siteConfig } from '@/lib/seo';
 
 const aboutDescription =
-  'Biographie et parcours artistique de Lyne Seybel, peintre francaise contemporaine, originaire de Bourges et inspiree par Paris, la Normandie, Venise et l\'Auvergne.';
+  'Biographie et parcours artistique de Lyne Seybel, peintre francaise moderne, originaire de Bourges et inspiree par Paris, la Normandie, Venise et l\'Auvergne.';
 
 export const metadata: Metadata = buildPageMetadata({
   title: 'A propos',

@@ -26,9 +26,9 @@ function resolveSiteUrl(): string {
 export const siteConfig = {
   name: 'Lyne Seybel',
   artistName: 'Lyne Seybel',
-  artistJobTitle: 'Peintre francaise contemporaine',
+  artistJobTitle: 'Peintre francaise moderne',
   description:
-    'Galerie en ligne des oeuvres de Lyne Seybel, peintre francaise contemporaine. Tableaux a l\'huile, acryliques et pastels inspires par Paris, Venise, les marines, les paysages et les bouquets.',
+    'Galerie en ligne des oeuvres de Lyne Seybel, peintre francaise moderne. Tableaux a l\'huile, acryliques et pastels inspires par Paris, Venise, les marines, les paysages et les bouquets.',
   language: 'fr-FR',
   locale: 'fr_FR',
   defaultOgImage: '/lyne-seybel.jpg',
@@ -36,7 +36,7 @@ export const siteConfig = {
   keywords: [
     'Lyne Seybel',
     'artiste peintre',
-    'peintre francaise contemporaine',
+    'peintre francaise moderne',
     'tableaux originaux',
     'galerie de peinture',
     'huile sur toile',
